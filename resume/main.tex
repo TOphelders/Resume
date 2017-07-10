@@ -8,7 +8,6 @@
 \usepackage[T1]{fontenc}
 
 %Margin setup
-
 \setlength{\voffset}{0.1in} \setlength{\paperwidth}{8in}
 \setlength{\paperheight}{11in}
 \setlength{\headheight}{0in}
@@ -21,10 +20,16 @@
 \setlength{\oddsidemargin}{-0.35in}
 \setlength{\evensidemargin}{-0.25in}
 
-%Item spacing
+%Section titles
+\usepackage{titlesec}
+\titlespacing\section{0pt}{16pt}{5pt}
+\titleformat{\section}
+  {\normalfont\fontsize{13}{15}\bfseries}{\thesection}{1em}{}
 
+%Item spacing
 \usepackage{enumitem}
 \setlist{nolistsep}
+\newcommand{\itemheader}[1]{\hspace*{7pt}\textbf{#1}}
 \newcommand{\indentitem}{\setlength\itemindent{25pt}}
 
 %tabularx column type
@@ -39,20 +44,30 @@
   \begin{tikzpicture}[remember picture, overlay]
     \useasboundingbox [fill={rgb:red,105;green,105;blue,105}] (-2,-2) rectangle (100,3);
     \node [left,text=white] at (85mm,2mm) {\textbf{\Huge TREVOR OPHELDERS}};
-    \node [right,text=white] at (128mm,8mm) {4A Software Engineering};
+    \node [right,text=white] at (138mm,8mm) {Software Engineer};
     \node [right,text=white] at (130mm,2mm) {t.ophelders@gmail.com};
     \node [right,text=white] at (143.5mm,-4mm) {(647) 267-9944};
   \end{tikzpicture}
-
+  
   \vspace*{45pt}
-  \section*{\small PROFILE}
-  \begin{itemize}
-        \item Experience working in Python, JavaScript, Java, C, C++, BASH, HTML and CSS/SASS
-    \item Also experienced with technologies including React, Node.js, RESTful web services, SQL and NoSQL databases, Socket.IO, and D3.js for animation
-  \end{itemize}
+  \section*{PROFILE}
+	\begin{itemize}
+        \item Experience working in Java, Python, JavaScript, C, C++, BASH, HTML and CSS/SASS
+		\item Also experienced using technologies including Apache Samza, React, Node.js, RESTful web services, SQL and NoSQL databases, Socket.IO, and D3.js
+	\end{itemize}
 
-  \section*{\small EXPERIENCE}
-      \hspace*{25pt}\textbf{Project Lead}, BlueRover, Kitchener, ON, Jan - Apr 2016
+	\section*{EXPERIENCE}
+      \itemheader{Anti Spam Developer}, Kik, Waterloo, ON, Sep - Dec 2016
+        \begin{itemize}
+          \indentitem
+          	\item Leveraged Java and Apache Samza technology to develop a comprehensive real time monitoring \hspace*{25pt}system of known spam groups
+            \item Deployed a microservice intended to dynamically analyze and detect problematic links upon click
+            \item Implemented new proof-of-concept spam detection rules with Python and Keras
+            \item Worked on the server side modifying services intended to handle massive amounts of chat mes-\hspace*{25pt}ages using Hadoop and Kafka
+        \end{itemize}
+        
+      \vspace{7pt}
+      \itemheader{Project Lead}, BlueRover, Kitchener, ON, Jan - Apr 2016
         \begin{itemize}
           \indentitem
             \item Responsible for entirety of SmartBin bin monitoring system, from start to beta release in April
@@ -62,52 +77,37 @@
         \end{itemize}
 
       \vspace{7pt}
-      \hspace*{7pt}\textbf{Software Intern}, Datera Inc., Mountain View, CA, May - Aug 2015
+      \itemheader{Software Intern}, Datera Inc., Mountain View, CA, May - Aug 2015
         \begin{itemize}
           \indentitem
             \item Worked on QA team using Python, JavaScript, and MongoDB to improve automated testing frame- \hspace*{25pt}work and reporting frontend
-            \item Developed solutions for test statistics and progress uploading as NoseTest plugins which are run \hspace*{25pt}on completion of tests
-            \item Wrote automated tests in Python to verify aspects of statistics reporting both internally and externally
         \end{itemize}
 
         \vspace{7pt}
-      \hspace*{7pt}\textbf{Software Developer}, Economical Insurance, Kitchener, ON, Sept - Dec 2014
+      \itemheader{Software Developer}, Economical Insurance, Kitchener, ON, Sept - Dec 2014
         \begin{itemize}
           \indentitem
             \item Contributed to the development of multiple Java EE applications, harnessing the JDBC API to com- \hspace*{25pt}municate with SQL databases
-            \item Developed utility scripts in both Python and BASH that were used to automate repeated tasks
-            \item Collaborated on designing web applications in JavaScript, HTML and CSS
         \end{itemize}
 
         \vspace{7pt}
-    \hspace*{7pt}\textbf{Software Developer}, Northern Digital Incorporated, Waterloo, ON, Jan - Apr 2014
-    \begin{itemize}
-      \indentitem
-      \item Designed and developed Java/C++ application software in the medical technology field intended to \hspace*{25pt}graphically display highly accurate 3D position data
-    \end{itemize}
+		\itemheader{Software Developer}, Northern Digital Incorporated, Waterloo, ON, Jan - Apr 2014
+        
+        \vspace{7pt}
+		\itemheader{QA Analyst}, NexJ Systems, Toronto, ON, May - Aug 2013
 
-    \vspace{7pt}
-    \hspace*{7pt}\textbf{QA Analyst}, NexJ Systems, Toronto, ON, May - Aug 2013
-    \begin{itemize}
-      \indentitem
-      \item Worked on QA team testing database integration and frontend of NexJ CRM software
-    \end{itemize}
+	\section*{ACTIVITIES AND INTERESTS}
+		\itemheader{GitHub Profile:} \url{https://github.com/TOphelders}
+        
+		\vspace*{1pt}
+		\itemheader{Sana Protocol Hub:} \url{https://github.com/delta-crew/sana.protocol_hub.js}
 
-  \section*{\small ACTIVITIES AND INTERESTS}
-    \hspace*{23pt}\textbf{GitHub Profile:} \url{https://github.com/TOphelders}
-
-    \vspace*{1pt}
-    \hspace*{7pt}\textbf{Member of UW DDR, Smash, and Archery Clubs} (Sept 2014 - Present)
-
-    \vspace*{1pt}
-    \hspace*{7pt}\textbf{First Robotics Team Member and Coder} (Sept 2011 - June 2012)
-
-    \vspace*{1pt}
-    \hspace*{7pt}Enjoy Reading, Super Smash Bros and DDR, Snowboarding, Playing Guitar, Hiking
-
-    \vspace*{1pt}
-    \hspace*{5pt} Interested in Machine Learning/Artificial Intelligence and Security
-
-  \section*{\small EDUCATION}
-    \hspace*{25pt}\textbf{Candidate for Bachelor of Software Engineering}, Co-operative Program, University of \\\hspace*{25pt}Waterloo, Waterloo, ON, Sept 2012 - present
+        \vspace*{1pt}
+        \hspace*{5pt} Interested in Machine Learning/Artificial Intelligence and Security
+        
+		\vspace*{1pt}
+		\hspace*{7pt}Enjoy Reading, Competitive Gaming, Snowboarding, Playing Guitar, Archery
+        
+	\section*{EDUCATION}
+		\itemheader{Bachelor of Software Engineering (BSE)}, Graduated with Distinction\\\hspace*{25pt}University of Waterloo, Waterloo, ON, Sept 2012 - April 2017
 \end{document}
