@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trevor Ophelders</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+      body {background-color: white;}
+      page {
+        background: white;
+        display: flex;
+        margin: 0 auto;
+        margin: 30mm 45mm 30mm 45mm;
+        box-shadow: 6px 10px 28px 0px rgba(0,0,0,0.4);
+      }
+      page[size="A4"] {
+        width: 21cm;
+        height: 29.7cm;
+      }
+      page[size="A4"][layout="portrait"] {
+        width: 29.7cm;
+        height: 21cm;
+      }
+      @media print {
+        body, page {
+          margin: 0;
+          box-shadow: 0;
+        }
+      }
+      
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+      }
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+      }
+      .fill {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .container {
+        color: black;
+        font-family: "Calibri", sans-serif;
+        font-weight: 600;
+        font-size: 12pt;
+      }
+      .header {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 15%;
+        color: #ffffff;
+        background-color: #4C5454;
+      }
+      .name {
+        font-weight: 400;
+        font-size: 45pt;
+      }
+      .title {
+        font-weight: 300;
+        font-size: 30pt;
+      }
+      .section-header {
+        width: 90%;
+        margin: 8% 0% 0% 5%;
+        border-bottom: 3px solid #4C5454;
+        font-size: 20pt;
+      }
+      .profile-container {
+        width: 38%;
+        height: 100%;
+        justify-content: center;
+      }
+      .profile {
+        width: 94%;
+        height: 96%;
+        align-items: center;
+        align-self: flex-end;
+        top: 2%;
+        left: 7%;
+        color: #ffffff;
+        background-color: #FF715B;
+      }
+      .profile-content {
+        width: 85%;
+        margin: 5% 0% 0% 5%;
+        align-self: flex-end;
+        font-size: 13pt;
+        font-weight: 500;
+      }
+      .icon-span i {
+        margin-right: 5%;
+      }
+      .history {
+        height: 100%;
+        width: 62%;
+        align-items: center;
+        margin-right: 3%;
+        color: #4C5454;
+      }
+      .history-content {
+        width: 90%;
+        margin: 5% 0% 0% 5%;
+        font-size: 13pt;
+        font-weight: 500;
+      }
+      .company-title {
+        font-size: 17pt;
+        font-weight: 700;
+      }
+      .job-title {
+        justify-content: space-between;
+        font-weight: 700;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <page size="A4">
+      <div class="container fill flex-column">
+        <div class="header flex-column">
+          <span class="name">TREVOR OPHELDERS</span>
+          <span class="title">SOFTWARE ENGINEER</span>
+        </div>
+        <div class="fill flex-row">
+          <div class="profile-container flex-column">
+            <div class="profile flex-column">
+              <div class="fill flex-column">
+                <div class="profile-content flex-column">
+                  <div class="icon-span flex-row">
+                    <i class="bi-envelope"></i>
+                    <span>t.ophelders@gmail.com</span>
+                  </div>
+                  <div class="icon-span flex-row">
+                    <i class="bi-github"></i>
+                    <span>TOphelders</span>
+                  </div>
+                  <div class="icon-span flex-row">
+                    <i class="bi-telephone"></i>
+                    <span>647-267-9944</span>
+                  </div>
+                  <div class="icon-span flex-row">
+                    <i class="bi-building"></i>
+                    <span>Toronto</span>
+                  </div>
+                </div>
+                <div class="section-header flex-column">
+                  <span>LANGUAGES</span>
+                </div>
+                <div class="profile-content flex-column">
+                  <span>Python</span>
+                  <span>JavaScript</span>
+                  <span>TypeScript</span>
+                  <span>Java</span>
+                  <span>Rust</span>
+                </div>
+                <div class="section-header flex-column">
+                  <span>TECHNOLOGIES</span>
+                </div>
+                <div class="profile-content flex-column">
+                  <span>React</span>
+                  <span>HTML / CSS</span>
+                  <span>SQL</span>
+                  <span>Docker</span>
+                  <span>Kubernetes</span>
+                  <span>Airflow</span>
+                  <span>DBT</span>
+                  <span>AWS / GCloud</span>
+                </div>
+                <div class="section-header flex-column">
+                  <span>EDUCATION</span>
+                </div>
+                <div class="profile-content flex-column">
+                  <span>BSE (Software Engineering)</span>
+                  <span>University of Waterloo</span>
+                  <span>2012 - 2017</span>
+                </div>
+                <div class="section-header flex-column">
+                  <span>INTERESTS</span>
+                </div>
+                <div class="profile-content flex-column">
+                  <span>Web Development</span>
+                  <span>Data Engineering</span>
+                  <span>Security</span>
+                  <span>Reading</span>
+                  <span>Music</span>
+                  <span>Winter Sports</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="history flex-column">
+            <div class="section-header">
+              <span>EXPERIENCE</span>
+            </div>
+            <div class="history-content flex-column">
+              <div class="company-title">
+                <span>theScore</span>
+              </div>
+              <div class="job-title flex-row">
+                <span>TEAM LEAD - DATA ENGINEERING</span>
+                <span>MAR 2021 - PRESENT</span>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>Took over leading a team of 6 Data Engineers seeing through the launch of theScore Bet in Canada.</li>
+                  <li>Led the deployment of new technologies to handle increased loads expected from Canada launch and growth, including upgrading Redshift and setting up DB replication.</li>
+                  <li>Took responsibility for maintaining the systems for Analytics / Tracking (AWS) and Reporting (GCP).</li>
+                </ul>
+              </div>
+              <div class="company-title">
+                <span>theScore</span>
+              </div>
+              <div class="job-title flex-row">
+                <span>SENIOR SOFTWARE DEVELOPER</span>
+                <span>SEP 2020 - MAR 2021</span>
+              </div>
+              <div class="job-title flex-row">
+                <span>SOFTWARE DEVELOPER</span>
+                <span>FEB 2018 - SEP 2020</span>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>Contributed to the launch of theScore Bet in the US, and the creation of the automated reporting system.</li>
+                  <li>Leveraged Kubernetes / Docker / Airflow / GCP to run the daily process required to generate financial reports for regulators.</li>
+                  <li>Developed an internal website in TypeScript / React / Flask made to automatically generate airflow tasks from analyst input.</li>
+                </ul>
+              </div>
+              <div class="company-title">
+                <span>Ruby</span>
+              </div>
+              <div class="job-title flex-row">
+                <span>FULL-STACK DEVELOPER</span>
+                <span>SEP 2017 - FEB 2018</span>
+              </div>
+              <div class="job-description">
+                <ul>
+                  <li>Participated in migrating an entire legacy codebase to a new platform.</li>
+                  <li>Utilized React, Redux, and Immutable.js to overhaul client-side navigation and integrated it with the legacy platform for the time being.</li>
+                  <li>Aided in the development of backend microservices written in Java - including technologies such as Spring, Elasticsearch, and Kafka.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </page>
+  </body>
+</html> 
