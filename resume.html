@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Trevor Ophelders</title>
+    <title>Trevor Ophelders - Resume</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <style>
       body {background-color: white;}
@@ -39,7 +39,9 @@
         width: 100%;
         height: 100%;
       }
-      
+      .divider {
+        height: 10px;
+      }
       .container {
         color: black;
         font-family: "Calibri", sans-serif;
@@ -48,11 +50,12 @@
       }
       .header {
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         width: 100%;
-        height: 15%;
+        height: 13%;
         color: #ffffff;
         background-color: #4C5454;
+        padding: 10px 0px;
       }
       .name {
         font-weight: 400;
@@ -60,11 +63,11 @@
       }
       .title {
         font-weight: 300;
-        font-size: 30pt;
+        font-size: 23pt;
       }
       .section-header {
         width: 90%;
-        margin: 8% 0% 0% 5%;
+        margin: 6% 0% 0% 5%;
         border-bottom: 3px solid #4C5454;
         font-size: 18pt;
       }
@@ -92,6 +95,7 @@
       }
       .icon-span i {
         margin-right: 5%;
+        padding-bottom: 5px;
       }
       .history {
         height: 100%;
@@ -107,14 +111,23 @@
         font-weight: 500;
       }
       .company-title {
-        font-size: 17pt;
+        font-size: 15pt;
         font-weight: 700;
       }
       .job-title {
         justify-content: space-between;
         font-weight: 700;
+        margin-bottom: -9px;
       }
-      
+      .job-description {
+        padding-left: 0;
+      }
+      .project-title {
+        justify-content: space-between;
+        font-size: 13pt;
+        font-weight: 700;
+        margin-bottom: -9px;
+      }
     </style>
   </head>
   <body>
@@ -122,7 +135,7 @@
       <div class="container fill flex-column">
         <div class="header flex-column">
           <span class="name">TREVOR OPHELDERS</span>
-          <span class="title">SENIOR SOFTWARE ENGINEER</span>
+          <span class="title">SOFTWARE ENGINEER</span>
         </div>
         <div class="fill flex-row">
           <div class="profile-container flex-column">
@@ -155,22 +168,21 @@
                   <span>TypeScript</span>
                   <span>Java</span>
                   <span>Rust</span>
+                  <span>HTML / CSS</span>
+                  <span>SQL</span>
                 </div>
                 <div class="section-header flex-column">
                   <span>TECHNOLOGIES</span>
                 </div>
                 <div class="profile-content flex-column">
-                  <span>React</span>
-                  <span>HTML / CSS</span>
-                  <span>SQL</span>
+                  <span>AWS / GCloud</span>
                   <span>Docker</span>
                   <span>Kubernetes</span>
+                  <span>React</span>
                   <span>GIT</span>
                   <span>Kafka</span>
-                  <span>CircleCI</span>
                   <span>Airflow</span>
                   <span>DBT</span>
-                  <span>AWS / GCloud</span>
                 </div>
                 <div class="section-header flex-column">
                   <span>EDUCATION</span>
@@ -200,18 +212,31 @@
             </div>
             <div class="history-content flex-column">
               <div class="company-title">
+                <span>Base13 Labs</span>
+              </div>
+              <div class="job-title flex-row">
+                <span>FULL STACK DEVELOPER</span>
+                <span>APR 2022 - PRESENT</span>
+              </div>
+              <div>
+                <ul class="job-description">
+                  <li>Worked with the founders to add onboarding and free tier service to FloSQL.</li>
+                  <li>Technologies used include Python and FastAPI on the backend, and TypeScript and React on the frontend.</li>
+                  <li>Currently building <a href="http://scannercardly.com">scannercardly.com</a> using the tech above.</li>
+                </ul>
+              </div>
+              <div class="company-title">
                 <span>theScore</span>
               </div>
               <div class="job-title flex-row">
                 <span>TEAM LEAD - DATA ENGINEERING</span>
                 <span>MAR 2021 - MAR 2022</span>
               </div>
-              <div class="job-description">
-                <ul>
+              <div>
+                <ul class="job-description">
                   <li>Took over leading a team of 6 Data Engineers seeing through the launch of theScore Bet in Canada.</li>
-                  <li>Led the deployment of new technologies to handle increased loads expected from Canada launch and growth, including upgrading Redshift and setting up DB replication.</li>
-                  <li>Took responsibility for maintaining the systems for the Analytics, Tracking, and Regulatory Reporting.</li>
-                  <li>Coordinated with other teams including Analytics and DevOps to prioritize work of the Data Engineering team and deploy our infrastructure.</li>
+                  <li>Led the deployment of new technologies to handle increased loads expected from Canada launch and growth.</li>
+                  <li>Took responsibility for maintaining the Analytics, Tracking, and Regulatory Reporting systems.</li>
                   <li>Led the hiring and onboarding of 4 new employees.</li>
                 </ul>
               </div>
@@ -222,30 +247,46 @@
                 <span>SENIOR SOFTWARE DEVELOPER</span>
                 <span>SEP 2020 - MAR 2021</span>
               </div>
+              <div class="divider"></div>
               <div class="job-title flex-row">
                 <span>SOFTWARE DEVELOPER</span>
                 <span>FEB 2018 - SEP 2020</span>
               </div>
-              <div class="job-description">
-                <ul>
+              <div>
+                <ul class="job-description">
                   <li>Developed and deployed a mission critical reporting system for regulatory bodies in both Canada and the USA.</li>
-                  <li>Worked to modify Airflow to suit internal needs, such as reading DAG formats from custom JSON and prioritzing tasks across DAGs to prevent deadlock.</li>
-                  <li>Overhauled deployments from existing Ansible / EC2 instances to Docker / Kubernetes.</li>
-                  <li>Wrote Python scripts run the daily process required to generate and upload financial reports to regulators and other partners daily.</li>
-                  <li>Developed an internal website in TypeScript / React / Flask to automatically generate airflow tasks through a helpful GUI and SQL input.</li>
+                  <li>Worked to modify Airflow to suit internal needs, such as reading DAG formats from JSON and prioritzing tasks across DAGs.</li>
+                  <li>Migrated deployments from Ansible / EC2 to Docker / Kubernetes.</li>
+                  <li>Wrote Python scripts to generate and upload financial reports to regulators and other partners daily.</li>
+                  <li>Developed an internal website in TS / React / Flask to automatically generate airflow tasks through a GUI.</li>
                 </ul>
               </div>
               <div class="company-title">
                 <span>Ruby</span>
               </div>
               <div class="job-title flex-row">
-                <span>FULL-STACK DEVELOPER</span>
+                <span>FULL STACK DEVELOPER</span>
                 <span>SEP 2017 - FEB 2018</span>
               </div>
-              <div class="job-description">
-                <ul>
+              <div>
+                <ul class="job-description">
                   <li>Utilized React, Redux, and Immutable.js to overhaul client-side navigation and integrated it with the legacy platform.</li>
                   <li>Developed backend microservices written in Java - using technologies such as Spring, Elasticsearch, and Kafka.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="section-header">
+              <span>PROJECTS</span>
+            </div>
+            <div class="history-content flex-column">
+              <div class="project-title">
+                <a href="https://www.sophelders.ca">sophelders.ca</a>
+              </div>
+              <div>
+                <ul class="job-description">
+                  <li>An artist portfolio built to run on GCloud free tier VMs.</li>
+                  <li>API built using Rust and Axum, running in docker.</li>
+                  <li>Frontend built with TypeScript and Preact to minimize footprint.</li>
                 </ul>
               </div>
             </div>
